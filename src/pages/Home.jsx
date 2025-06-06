@@ -7,9 +7,13 @@ import designsImg from '../assets/designs.svg';
 import conceptsImg from '../assets/concepts.svg';
 import codeImg from '../assets/code.svg';
 
-import gsap from "gsap";
+// import gsap from 'gsap';
 import { Link } from 'react-router-dom';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+
+gsap.registerPlugin(ScrollTrigger);
 
 // Import other page components
 import Projects from './Projects';
