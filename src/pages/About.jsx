@@ -35,7 +35,7 @@ const About = () => {
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               I am Vikash Rajpoot, a front-end developer with a strong foundation in Computer Science Engineering (B.Tech) and 2 years of hands-on experience building dynamic, user-friendly web applications. My journey has been driven by a passion for clean design, smooth interactivity, and writing scalable, maintainable code.
 
-              I specialize in React.js, JavaScript, HTML, CSS, Tailwind CSS, and animation libraries like GSAP. I have integrated REST APIs into various projects, showcasing my ability to handle data-driven components and real-time user experiences.
+              I specialize in React.js, JavaScript, HTML, CSS, Tailwind CSS, and animation libraries like Framer Motion. I have integrated REST APIs into various projects, showcasing my ability to handle data-driven components and real-time user experiences.
 
               Notable projects include:
 
