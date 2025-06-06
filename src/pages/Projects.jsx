@@ -13,7 +13,7 @@ const Projects = () => {
       previewImg: portfolioprojectImg, // Using imported image
       logo: 'https://via.placeholder.com/50', // Placeholder logo URL (replace with imported asset)
       title: 'Portfolio Website', // Simplified title for clarity
-      link: '#', // Placeholder project link
+      link: 'https://vikashrajpootportfolio.netlify.app/', // Placeholder project link
     },
     {
       id: 2,
