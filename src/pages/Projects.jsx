@@ -4,6 +4,8 @@ import portfolioprojectImg from '../assets/portfolioproject.png';
 import project2Img from '../assets/project2.jpg';
 import jumbleImg from '../assets/jumble.png';
 import todoImg from '../assets/todo.jpg'; // Assuming the image file is named todo.png
+import movie from '../assets/movie.jpg';
+import Shopping from '../assets/Shopping.jpg';
 
 const Projects = () => {
   // Placeholder project data (replace with your actual project data and imported assets)
@@ -35,6 +37,20 @@ const Projects = () => {
       logo: 'https://via.placeholder.com/50', // Placeholder logo URL (replace with imported asset)
       title: 'To Do List', // Simplified title for clarity
       link: 'https://github.com/Vikashsingh022/Todo-List.git', // Placeholder project link
+    },
+    {
+      id: 5,
+      previewImg: movie,
+      logo: 'https://via.placeholder.com/50', // Placeholder logo URL (replace with imported asset)
+      title: 'MovieSite', // Simplified title for clarity
+      link: 'https://moviesitefinjoy.netlify.app/', // Placeholder project link
+    },
+    {
+      id: 6,
+      previewImg: Shopping,
+      logo: 'https://via.placeholder.com/50', // Placeholder logo URL (replace with imported asset)
+      title: 'Shopping App', // Simplified title for clarity
+      link: 'https://shopingappdemo.netlify.app/', // Placeholder project link
     },
     // >>> ADD NEW PROJECTS BELOW THIS LINE <<<
     // Remember to import new assets at the top of the file before using them here.

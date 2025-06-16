@@ -42,17 +42,17 @@ const Home = () => {
 
   return (
     <>
-      <section id="hero" className="relative overflow-hidden min-h-screen flex items-center">
+      <section id="hero" className="relative overflow-hidden min-h-screen flex items-center py-20 md:py-0">
         <div className="container mx-auto px-4 z-20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* LEFT: Hero Content */}
-            <div className="flex-1">
+            <div className="flex-1 w-full">
               <div className="flex flex-col gap-7">
                 <div className="hero-text">
-                  <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
+                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4">
                     Hi, 👋
                     {/* Animated Text + Image */}
-                    <span className="slide inline-block bg-zinc-500 dark:bg-zinc-500 px-3 py-1 rounded-md ml-2 overflow-hidden" style={{ width: 'fit-content' }}>
+                    <span className="slide inline-block bg-zinc-500 dark:bg-zinc-500 px-2 sm:px-3 py-1 rounded-md ml-2 overflow-hidden" style={{ width: 'fit-content' }}>
                       <AnimatePresence mode="wait">
                         <motion.span
                           key={currentIndex}
@@ -60,10 +60,10 @@ const Home = () => {
                           animate={{ opacity: 1, x: 0 }}
                           exit={{ opacity: 0, x: -30 }}
                           transition={{ duration: 0.4 }}
-                          className="wrapper flex flex-row items-center justify-center min-w-[120px] min-h-[20px]"
+                          className="wrapper flex flex-row items-center justify-center min-w-[100px] sm:min-w-[120px] min-h-[20px]"
                         >
-                          <img src={animatedItems[currentIndex].src} alt={animatedItems[currentIndex].alt} className="h-8 md:h-10 mb-1" />
-                          <span className="text-sm md:text-base font-bold text-gray-800 dark:text-slate-800">
+                          <img src={animatedItems[currentIndex].src} alt={animatedItems[currentIndex].alt} className="h-6 sm:h-8 md:h-10 mb-1" />
+                          <span className="text-xs sm:text-sm md:text-base font-bold text-gray-800 dark:text-slate-800">
                             {animatedItems[currentIndex].text}
                           </span>
                         </motion.span>
@@ -71,12 +71,12 @@ const Home = () => {
                     </span>
                   </h1>
 
-                  <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-indigo-500">
+                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 text-indigo-500">
                     I am {name}
                   </h1>
                 </div>
 
-                <p className="text-xl md:text-2xl font-extrabold text-blue-600 dark:text-blue-300">
+                <p className="text-lg sm:text-xl md:text-2xl font-extrabold text-blue-600 dark:text-blue-300">
                   {roles.map((role, index) => (
                     <span key={index}>
                       {role}{index < roles.length - 1 ? " | " : ""}
@@ -84,7 +84,7 @@ const Home = () => {
                   ))}
                 </p>
 
-                <Link to="/projects" className="bg-stone-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 w-fit inline-block text-center">
+                <Link to="/projects" className="bg-stone-500 hover:bg-blue-700 text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-lg transition-colors duration-300 w-fit inline-block text-center text-sm sm:text-base">
                   See My Work
                 </Link>
               </div>
@@ -92,12 +92,12 @@ const Home = () => {
 
             {/* RIGHT: Visual */}
             <motion.div 
-              className="flex-1"
+              className="flex-1 w-full mt-8 md:mt-0"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <img src={lightImg} alt="Lamp" className="w-full h-[500px] object-contain rounded-lg" />
+              <img src={lightImg} alt="Lamp" className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-contain rounded-lg" />
             </motion.div>
           </div>
         </div>
